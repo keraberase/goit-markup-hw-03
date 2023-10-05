@@ -14,7 +14,8 @@ p {
 a {
   text-decoration: none;
 }
-ul li {
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
@@ -30,10 +31,10 @@ img {
   display: flex;
   align-items: center;
 }
-.conteiner {
-  max-width: 1440px;
-  padding-left: 156px;
-  padding-right: 156px;
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 .header {
@@ -55,7 +56,7 @@ img {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-right: 76px;
+  margin-right: 76px;
 }
 .header-logo span {
   color: #2e2f42;
@@ -75,6 +76,8 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-menu-item {
   display: flex;
@@ -115,33 +118,33 @@ img {
 }
 .basis {
   background: #2e2f42;
-  padding: 260px 472px 292px 472px;
+  padding: 188px 0;
 }
 .basis-head {
   color: #fff;
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
   max-width: 496px;
+
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .basis-button {
-  font-family: "Roboto", sans-serif;
+  display: block;
   color: #fff;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  background: #4d5ae5;
-  display: inline-flex;
+  cursor: pointer;
+  margin: 0 auto;
   padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
+  min-width: 169px;
   border-radius: 4px;
-  margin-top: 64px;
-  margin-left: 196px;
-  border: none;
 }
 .basis-button:hover {
   background-color: #404bbf;
@@ -150,14 +153,18 @@ img {
   background-color: #404bbf;
 }
 .feauter {
+  padding: 120px 0;
+}
+.visually-hidden {
+  visibility: hidden;
 }
 .feauter-list {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 120px 0;
 }
 .feauter-list-item {
+  width: calc((100% - 72px) / 4);
 }
 .feauter-list-head {
   color: #2e2f42;
@@ -165,6 +172,7 @@ img {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .feauter-list-text {
   font-size: 16px;
@@ -193,6 +201,10 @@ img {
 }
 .team-list-item {
   background: #fff;
+  border-radius: 0px 0px 4px 4px;
+}
+.employee {
+  padding: 32px 0;
 }
 .team-name {
   color: #2e2f42;
@@ -201,6 +213,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-profession {
   text-align: center;
@@ -209,9 +222,8 @@ img {
   letter-spacing: 0.02em;
 }
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
+
 .potfolio-head {
   color: #2e2f42;
   text-align: center;
@@ -233,7 +245,12 @@ img {
   border: 1px solid #e7e9fc;
   background: #fff;
   border: 0;
-  flex-basis: calc((100%-48px) / 3);
+  width: calc((100%-48px) / 3);
+}
+.feauter-text-setting {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .feauter-header {
   color: #2e2f42;
@@ -241,20 +258,17 @@ img {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
-  padding: 32px 16px 0px 16px;
-  border-top: none;
+  margin-bottom: 8px;
 }
 .feauter-specification {
   font-size: 16px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
-  padding: 0 16px 32px 16px;
   border-top: none;
 }
 .footer {
   background: #2e2f42;
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 .container-footer {
 }
@@ -266,7 +280,7 @@ img {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-logo-span {
