@@ -82,6 +82,7 @@ img {
 .header-menu-item {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 .header-menu-link {
   color: #2e2f42;
