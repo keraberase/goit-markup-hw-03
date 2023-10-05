@@ -38,8 +38,6 @@ img {
   margin: 0 auto;
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-navigation {
@@ -76,12 +74,11 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-menu-item {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 .header-menu-link {
   color: #2e2f42;
@@ -156,7 +153,16 @@ img {
   padding: 120px 0;
 }
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .feauter-list {
   display: flex;
@@ -222,6 +228,8 @@ img {
   letter-spacing: 0.02em;
 }
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .potfolio-head {
@@ -240,12 +248,12 @@ img {
   flex-wrap: wrap;
   gap: 48px 24px;
   padding-left: 0px;
+  width: calc((100%-48px) / 3);
 }
 .portfolio-list-item {
   border: 1px solid #e7e9fc;
   background: #fff;
   border: 0;
-  width: calc((100%-48px) / 3);
 }
 .feauter-text-setting {
   padding: 32px 16px;
